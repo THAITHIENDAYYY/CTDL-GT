@@ -21,3 +21,16 @@ void inputFraction(Fraction &frac) {
 void outputFraction(Fraction frac) {
     cout << frac.numerator << "/" << frac.denominator << endl;
 }
+int main() {
+     Fraction frac;
+
+    // Nhập phân só 
+    cout << "Nhap vào phan so : " << endl;
+    inputFraction(frac);
+    
+    // Xuất phân số 
+    cout << " Phan so vua nhap la: ";
+    outputFraction (frac);
+
+    return 0;
+}
