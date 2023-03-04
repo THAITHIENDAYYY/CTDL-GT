@@ -1,0 +1,27 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+struct duongtron{
+	int a;
+	int b;
+	int r;
+};
+void nhapduongtron(duongtron &l){
+	cout<<"Nhap a va b va ban kinh: "<< endl;
+	cin >>l.a >> l.b>> l.r;
+}
+void xuatduongtron(duongtron l){
+	cout << "toa do I("<<l.a<<";"<<l.b<<")"<<endl;
+	cout << "phuong trinh duong tron: " << "(x - "<<l.a<<")^2 + (y - "<<l.b<<")^2 = " << l.r <<"^2"<<endl;
+}
+int main(){
+	double S,P;
+	duongtron l;
+	nhapduongtron(l);
+	xuatduongtron(l);
+	S = l.r * l.r * 3.14;
+	P = 2 * l.r * 3.14;
+	cout <<"dien tich la: "<<S<<endl;
+	cout <<"chu vi la: " << P<<endl;
+	return 0;
+}
